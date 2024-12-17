@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyeux Noël</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #4A90E2, #FF99CC);
+            color: white;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .flowers {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 30%;
+            background: url('https://i.imgur.com/LNsF1U5.png') repeat-x;
+            background-size: contain;
+            animation: moveFlowers 15s linear infinite;
+        }
+
+        .animation {
+            width: 300px;
+            height: 300px;
+            background: url('https://i.imgur.com/G4w1uv7.gif') no-repeat center center;
+            background-size: contain;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes moveFlowers {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -2000px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎄 Joyeux Noël ! 🎁</h1>
+        <div class="animation"></div>
+        <h2>Madame Bénédicte Lasaba vous souhaite une excellente fête de Noël !</h2>
+    </div>
+    <div class="flowers"></div>
+</body>
+</html>
